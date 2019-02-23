@@ -33,7 +33,6 @@ TARGET_NO_RADIOIMAGE         := true
 
 # Platform
 TARGET_BOARD_PLATFORM     := msm8974
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # Architecture
 TARGET_ARCH         := arm
