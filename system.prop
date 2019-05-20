@@ -9,6 +9,7 @@ mm.enable.qcom_parser=37491
 debug.stagefright.ccodec=0
 ro.ril.enable.amr.wideband=1
 ro.telephony.default_network=9
+debug.stagefright.ccodec=0
 
 wifi.interface=wlan0
 ro.use_data_netmgrd=true
