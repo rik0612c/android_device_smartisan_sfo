@@ -276,4 +276,8 @@
 
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
+    
+    <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+    
 </resources>
