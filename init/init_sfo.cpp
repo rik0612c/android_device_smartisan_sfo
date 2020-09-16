@@ -39,7 +39,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "property_service.h"
 
 using android::base::ReadFileToString;
-using android::init::property_set;
 
 const std::string cpu_id_file = "/sys/pversion_info/cpu_id";
 
