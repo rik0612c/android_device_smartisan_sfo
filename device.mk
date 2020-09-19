@@ -194,7 +194,8 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    tinymix
+    tinymix \
+    libaudioclient_shim
 
 # Bluetooth HAL
 PRODUCT_PACKAGES += \
