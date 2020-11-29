@@ -157,10 +157,7 @@ vendor/lib/libxml.so
 vendor/qcril.db
 
 # Time services
-bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
--vendor/lib/libTimeService.so
--app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
 
 # Venus (media) firmware
 etc/firmware/venus.b00:vendor/firmware/venus.b00
