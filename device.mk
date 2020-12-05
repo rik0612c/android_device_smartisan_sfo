@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -236,10 +237,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl
-
-# Keystore
-PRODUCT_PACKAGES += \
-    keystore.msm8974
 
 # Misc dependency packages
 PRODUCT_PACKAGES += \
