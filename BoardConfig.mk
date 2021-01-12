@@ -69,6 +69,8 @@ TARGET_KERNEL_SOURCE               := kernel/smartisan/msm8974
 TARGET_KERNEL_ARCH                 := arm
 TARGET_KERNEL_CONFIG               := lineage_sfo-lte_defconfig
 BOARD_DTBTOOL_ARGS                 := -2
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE            := true
