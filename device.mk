@@ -311,6 +311,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
+    
+# HIDL
+PRODUCT_PACKAGES += \
+    vndservicemanager
 
 ifneq ($(QCPATH),)
 $(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
