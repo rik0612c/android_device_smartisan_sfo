@@ -233,10 +233,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.configstore@1.1-service
 
-# RenderScript HAL
- PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Radio
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
