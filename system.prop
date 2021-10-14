@@ -120,3 +120,5 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # BPF
 ro.kernel.ebpf.supported=false
+
+debug.renderengine.backend=threaded
