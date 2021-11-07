@@ -118,7 +118,8 @@ dalvik.vm.heapmaxfree=8m
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
-# BPF
+# S bring up
 ro.kernel.ebpf.supported=false
-
 debug.renderengine.backend=threaded
+persist.sys.binary_xml=false
+ro.vndk.version=current
