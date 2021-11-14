@@ -22,6 +22,7 @@ DEVICE_PATH := device/smartisan/sfo
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
 LOCAL_CHECK_ELF_FILES := false
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_DUP_RULES := true
 
 # Assertion
 TARGET_OTA_ASSERT_DEVICE := sfo,msm8974sfo,msm8974sfo_lte
@@ -116,7 +117,7 @@ TARGET_USES_C2D_COMPOSITION       := true
 TARGET_USE_COMPAT_GRALLOC_PERFORM := true
 TARGET_USES_ION                   := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS   := 3
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x02000000U | 0x02002000U
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Shader cache config options
@@ -228,6 +229,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shim
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
+    /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so \
+    /system/vendor/lib/libmm-abl.so|libshims_thermal.so
 
 -include vendor/smartisan/sfo/BoardConfigVendor.mk
