@@ -36,6 +36,10 @@ TARGET_NO_RADIOIMAGE         := true
 # Platform
 TARGET_BOARD_PLATFORM     := msm8974
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+
 # Architecture
 TARGET_ARCH         := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
