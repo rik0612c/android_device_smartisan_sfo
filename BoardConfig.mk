@@ -73,6 +73,7 @@ TARGET_KERNEL_SOURCE               := kernel/smartisan/sfo
 TARGET_KERNEL_ARCH                 := arm
 TARGET_KERNEL_CONFIG               := lineage_sfo-lte_defconfig
 BOARD_DTBTOOL_ARGS                 := -2
+TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
@@ -225,6 +226,7 @@ DONT_DEXPREOPT_PREBUILTS := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shim
 TARGET_LD_SHIM_LIBS := \
