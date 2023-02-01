@@ -61,14 +61,14 @@
 
     <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/priv-app/MKParts/MKParts.apk</item>
+        <item>/system/priv-app/LineageParts/LineageParts.apk</item>
         <item>/system/priv-app/KeyHandlerSfo/KeyHandlerSfo.apk</item>
     </string-array>
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.mokee.mkparts.gestures.KeyHandler</item>
-        <item>org.mokee.settings.device.KeyHandler</item>
+        <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
+        <item>org.lineageos.settings.device.KeyHandler</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.
@@ -111,7 +111,7 @@
             8 - Last app
             9 - Toggle split screen
          This needs to match the enums in
-         sdk/src/java/org/mokee/internal/util/DeviceKeysConstants.java.
+         sdk/src/java/org/lineageos/internal/util/DeviceKeysConstants.java.
     -->
     <integer name="config_longPressOnHomeBehavior">7</integer>
 

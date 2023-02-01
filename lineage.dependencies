@@ -7,4 +7,8 @@
    "repository": "android_kernel_smartisan_msm8974",
    "target_path": "kernel/smartisan/msm8974"
  }
+ {
+    "repository": "android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep"
+ }
 ]

@@ -61,3 +61,6 @@ bin/thermal-engine:vendor/bin/thermal-engine|9ff2211306925c540ca8cfa7dc7243a6711
 etc/thermal-engine-8974.conf:vendor/etc/thermal-engine-8974.conf
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
+
+# Time services
+-vendor/lib/libtime_genoff.so|b979a44a02adbc2f09eee0cdd842bc94ac3266d6

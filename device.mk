@@ -2,7 +2,7 @@ LOCAL_PATH := device/smartisan/sfo
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-mokee
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -219,10 +219,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 
-# Input
-PRODUCT_PACKAGES += \
-    KeyHandlerSfo
-
 # RenderScript HAL
  PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -255,11 +251,11 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.mokee.touch@1.0-service.sfo
+    vendor.lineage.touch@1.0-service.sfo
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    vendor.mokee.trust@1.0-service
+    vendor.lineage.trust@1.0-service
 
 # ANT+
 PRODUCT_PACKAGES += \
