@@ -36,7 +36,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <sys/_system_properties.h>
 
 #include "vendor_init.h"
-#include "property_service.h"
 
 using android::base::ReadFileToString;
 
