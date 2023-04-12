@@ -19,6 +19,9 @@ BOARD_VENDOR := smartisan
 
 DEVICE_PATH := device/smartisan/sfo
 
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+LOCAL_CHECK_ELF_FILES := false
+
 # Assertion
 TARGET_OTA_ASSERT_DEVICE := sfo,msm8974sfo,msm8974sfo_lte
 
