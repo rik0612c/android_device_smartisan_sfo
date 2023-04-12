@@ -4,8 +4,8 @@
    "target_path": "vendor/smartisan/sfo"
  },
  {
-   "repository": "android_kernel_smartisan_msm8974",
-   "target_path": "kernel/smartisan/msm8974"
+   "repository": "android_kernel_smartisan_sfo",
+   "target_path": "kernel/smartisan/sfo"
  }
  {
     "repository": "android_hardware_sony_timekeep",
