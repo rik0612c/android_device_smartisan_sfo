@@ -50,15 +50,11 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_device(const char*name, const char *model, const char *description, const char *fingerprint)
+void load_device(const char*name, const char *model)
 {
-    property_override("ro.bootimage.build.fingerprint", fingerprint);
-    property_override("ro.build.description", description);
-    property_override("ro.build.fingerprint", fingerprint);
     property_override("ro.product.name", name);
     property_override("ro.product.model", model);
     property_override("ro.vendor.product.model", model);
-    property_override("ro.vendor.build.fingerprint", fingerprint);
 }
 
 void init_product_properties()
@@ -69,17 +65,13 @@ void init_product_properties()
         if (cpu_id.find("cpu_id=213") != -1) {
             load_device(
                 "msm8974sfo",
-                "SM701",
-                "msm8974sfo-user 4.4.2 SANFRANCISCO dev-keys",
-                "smartisan/msm8974sfo/msm8974sfo:4.4.2/SANFRANCISCO:user/dev-keys"
+                "SM701"
             );
         }
         else if (cpu_id.find("cpu_id=194") != -1) {
             load_device(
                 "msm8974sfo_lte",
-                "SM705",
-                "msm8974sfo_lte-user 4.4.2 SANFRANCISCO dev-keys",
-                "smartisan/msm8974sfo_lte/msm8974sfo_lte:4.4.2/SANFRANCISCO:user/dev-keys"
+                "SM705"
             );
         }
         else {
