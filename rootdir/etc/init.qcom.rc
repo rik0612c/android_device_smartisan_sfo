@@ -538,7 +538,6 @@ service ril-daemon3 /system/vendor/bin/hw/rild -c 3
 service charger /charger
     class charger
     critical
-    seclabel u:r:charger:s0
 
 service hvdcp /vendor/bin/hvdcp
     class core
