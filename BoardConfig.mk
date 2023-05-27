@@ -229,5 +229,8 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Shim
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
+    
+# Security patch level
+VENDOR_SECURITY_PATCH := 2016-01-01
 
 -include vendor/smartisan/sfo/BoardConfigVendor.mk
