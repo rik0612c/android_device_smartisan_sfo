@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
 # SoftAP
 PRODUCT_PACKAGES += \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
     wcnss_service
 
 # IPC router config
@@ -188,8 +187,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.0-impl \
-    audiod \
-    audio_policy.msm8974 \
     audio.primary.msm8974 \
     audio.r_submix.default \
     audio.usb.default \
@@ -208,13 +205,8 @@ PRODUCT_PACKAGES += \
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
-    make_ext4fs \
-    setup_fs \
-    mkntfs \
-    dumpe2fs \
     resize2fs \
     e2fsck_static \
-    mke2fs_static \
     resize2fs_static
 
 # Graphics
@@ -224,7 +216,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
     memtrack.msm8974 \
     liboverlay \
-    libgenlock \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
@@ -240,9 +231,6 @@ PRODUCT_PACKAGES += \
 
 # Misc dependency packages
 PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libnl_2 \
     libbson
 
 # Seccomp policy
@@ -266,7 +254,6 @@ PRODUCT_PACKAGES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    com.dsi.ant.antradio_library \
     libantradio
 
 # Permissions
