@@ -159,6 +159,7 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 TARGET_USES_QCOM_WCNSS_QMI       := false
 TARGET_USES_WCNSS_CTRL           := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4          := true
